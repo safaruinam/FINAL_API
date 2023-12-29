@@ -7,6 +7,10 @@ android {
     namespace = "com.example.myapplication"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.myapplication"
         minSdk = 28
@@ -48,4 +52,8 @@ dependencies {
 
     //  lottie animations
     implementation ("com.airbnb.android:lottie:6.2.0")
+    // GSON converter
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    // retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
 }
